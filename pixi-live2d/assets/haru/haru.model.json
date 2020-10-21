@@ -1,0 +1,68 @@
+{
+	"type":"Live2D Model Setting",
+	"name":"haru",
+	"model":"haru.moc",
+	"textures":
+	[
+		"haru.1024/texture_00.png",
+		"haru.1024/texture_01.png",
+		"haru.1024/texture_02.png",
+		"haru.1024/texture_03.png",
+		"haru.1024/texture_04.png"
+	],
+	"physics":"haru.physics.json",
+	"pose":"haru.pose.json",
+	"expressions":
+	[
+		{"name":"ah ha","file":"expressions/ah ha.exp.json"},
+		{"name":"care me","file":"expressions/care me.exp.json"},
+		{"name":"look 3 small.exp","file":"expressions/look 3 small.exp.json"},
+		{"name":"nothing","file":"expressions/nothing.exp.json"},
+		{"name":"What are you talking about","file":"expressions/What are you talking about.exp.json"},
+		{"name":"Oh no","file":"expressions/Oh no.exp.json"},
+		{"name":"What do you mean","file":"expressions/What do you mean.exp.json"}
+	],
+	"layout":
+	{
+		"center_x":0,
+		"y":1.6,
+		"width":3.2
+	},
+	"hit_areas":
+	[
+		{"name":"head", "id":"D_REF.HEAD"},
+		{"name":"body", "id":"D_REF.BODY"}
+	],
+	"motions":
+	{
+		"idle":
+		[
+			{"file":"motions/idle_00.mtn" ,"fade_in":2000, "fade_out":2000},
+			{"file":"motions/idle_01.mtn" ,"fade_in":2000, "fade_out":2000}
+		],
+		"tap_body":
+		[
+			{ "file":"motions/nothing.mtn" , "sound":"sounds/nothing.mp3"},
+			{ "file":"motions/What do you mean.exp.mtn" , "sound":"sounds/What do you mean.mp3"},
+			{ "file":"motions/look 3 small.exp.mtn" , "sound":"sounds/look 3 small.mp3"},
+			{ "file":"motions/Oh no.exp.mtn" , "sound":"sounds/Oh no.mp3"},
+			{ "file":"motions/ah ha.exp.mtn" , "sound":"sounds/ah ha.mp3"}
+		],
+		"pinch_in":
+		[
+			{ "file":"motions/What are you talking about.mtn", "sound":"sounds/What are you talking about.mp3" }
+		],
+		"pinch_out":
+		[
+			{ "file":"motions/look 3 small.mtn", "sound":"sounds/look 3 small.mp3" }
+		],
+		"shake":
+		[
+			{ "file":"motions/what are you doing.mtn", "sound":"sounds/what are you doing.mp3","fade_in":2000 }
+		],
+		"flick_head":
+		[   { "file":"motions/care me" , "sound":"sounds/care me.mp3"},
+			{ "file":"motions/Right here here.mtn", "sound":"sounds/Right here here.mp3" }
+		]
+	}
+}
