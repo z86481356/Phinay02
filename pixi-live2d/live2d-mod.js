@@ -78,6 +78,8 @@ const modelHaru = {
 			{"file": "assets/haru/motions/garbage.mtn","sound": "assets/haru/sounds/garbage.mp3"},
 			{"file": "assets/haru/motions/Bad breath.mtn","sound": "assets/haru/sounds/Bad breath.mp3"},
 			{"file": "assets/haru/motions/Cannot describe.mtn","sound": "assets/haru/sounds/Cannot describe.mp3"},
+			{"file": "assets/haru/motions/Hmmm.mtn","sound": "assets/haru/sounds/Hmmm.mp3"},
+			{"file": "assets/haru/motions/itch.mtn","sound": "assets/haru/sounds/itch.mp3"},
 			{"file": "assets/haru/motions/ah ha.mtn","sound": "assets/haru/sounds/ah ha.mp3"}
 			],
 		"pinch_in": [{
